@@ -10,11 +10,11 @@
 /* <!-- header nav  part start --> */
 .head{
 
+
 }
 .nav-primary{
-  display: flex;
-
-   justify-content:space-around;
+   display: flex;
+  justify-content:space-around; 
 }
 .nav-1{
 
@@ -23,18 +23,20 @@
 
 }
 .nav-3{
-
+  display: flex; 
 }
 .nav-4{
 font-size: 2rem;
 font-weight: 700;
 }
 .nav-5{
-
+  gap: 5px;
 }
 .nav-6{
+  display: flex;
   list-style: none;
-  gap: 5px;
+  gap: 32px;
+  
 }
 .nav-7{
 color: #FEA301;
@@ -58,6 +60,8 @@ color: #5D58EF;
   padding: 10px 62.5px;
   border-radius: 12px;
   border: none;
+  height: 51px;
+  width: 197px;
 }
 /* header nav end */
 /* header banner start */
@@ -181,12 +185,35 @@ color: #8700FF;
   border: none;
 }
 /* main style part-1 end */
+/* main style part-2 start */
+.primary-part-2{
+  display: grid;
+  /* background-color: #64C8FF; */
+  grid-template-columns: repeat(2, 1fr);
+  
+  
+}
+.card-1{
+  grid-row: span 2;
+}
+.primary-part-3{
 
+}
+/* footer-style-start */
+.footer-main-container{
+  display: flex;
+  justify-content: space-around;
+  background-color:#06aefc ;
+}
+.footer-1{
+  display: flex;
+}
 
 /*   small screen */
 @media screen and (max-width:567px) {
   .banner-1{
-    flex-direction: column;
+    /* flex-direction: column ; */
+    flex-direction: column-reverse;
   }
   .banner-2{
     text-align: center;
@@ -199,5 +226,10 @@ color: #8700FF;
   .btn-master{
     display: none;
   }
+/* body part-2 responsive */
 
+/* footer part */
+.footer-main-container{
+  flex-direction: column;
+}
 }
